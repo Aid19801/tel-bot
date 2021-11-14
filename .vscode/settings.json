@@ -1,0 +1,12 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "statusBarBackground": "#00EECC",
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  }
+}
