@@ -30,6 +30,7 @@ bot.command('quit', (ctx) => {
 });
 
 bot.command('keyboard', (ctx) => {
+console.log('=== 1. keyboard command START');
   ctx.reply(
     'Keyboard',
     Markup.inlineKeyboard([
@@ -37,15 +38,17 @@ bot.command('keyboard', (ctx) => {
       Markup.button.callback('Second option', 'second'),
     ])
   );
+  console.log('=== 1. keyboard command END');
 });
 
 bot.on('text', (ctx) => {
+    console.log('=== 2. text command START');
   ctx.reply(
     'You choose the ' +
       (ctx.message.text === 'first' ? 'First' : 'Second') +
       ' Option!'
   );
-
+  console.log('=== 2. text command END');
   if (chatId) {
     telegram.sendMessage(
       chatId,

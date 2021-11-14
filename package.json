@@ -11,7 +11,7 @@
     "prepare": "tsc",
     "build": "rm -rf dist/ && tsc",
     "dev": "ts-node src/app.ts",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js -p $PORT"
   },
   "keywords": [],
   "author": "",
